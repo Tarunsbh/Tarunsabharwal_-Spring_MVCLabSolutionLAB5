@@ -1,0 +1,14 @@
+package com.greatlearning.studentmanagement.service;
+
+import java.util.List;
+
+import com.greatlearning.studentmanagement.model.Student;
+
+public class StudentServiceWork {
+
+	public List<Student> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

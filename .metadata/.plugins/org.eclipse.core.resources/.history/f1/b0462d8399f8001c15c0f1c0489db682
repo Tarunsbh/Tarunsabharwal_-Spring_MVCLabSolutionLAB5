@@ -1,0 +1,41 @@
+package com.greatlearning.studentmanagement.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.greatlearning.studentmanagement.model.Student;
+
+
+
+@Service
+public class StudentServiceImpl implements StudentService {
+
+	@Override
+	public List<Student> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Student findById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void save(Student thestudent) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteById(int id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	
+
+}

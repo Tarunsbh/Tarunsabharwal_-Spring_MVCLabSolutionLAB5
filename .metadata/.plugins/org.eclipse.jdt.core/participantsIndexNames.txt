@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+C:\Users\pc\Desktop\Lab 5 - Spring MVC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3835639923.index
+\studentmanagement\src\main\java
+C:\Users\pc\Desktop\Lab 5 - Spring MVC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4029723612.index
+\st1\src\main\java

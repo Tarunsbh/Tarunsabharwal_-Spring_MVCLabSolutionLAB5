@@ -1,0 +1,77 @@
+package com.greatlearning.studentmanagement.service;
+
+import java.util.List;
+
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.greatlearning.studentmanagement.model.Student;
+
+@Repository
+public class StudentServiceWork {
+
+	private SessionFactory sessionFactory;
+	private Session session;
+	Transaction tx = null;
+
+	@Autowired
+	StudentServiceWork(SessionFactory sessionFactory) {
+		this.session = sessionFactory.openSession();
+		try {
+			session = sessionFactory.getCurrentSession();
+		} catch (HibernateException e) {
+			session = sessionFactory.openSession();
+		}
+	}
+
+	@Transactional
+	public List<Student> findAll() {
+		tx = session.beginTransaction();
+
+		List<Student> students = session.createQuery("from Student", Student.class).list();
+
+		tx.commit();
+		return students;
+	}
+
+	@Transactional
+	public Student findById(int id) {
+
+		tx = session.beginTransaction();
+
+		Student student = session.get(Student.class, id);
+
+		tx.commit();
+		return student;
+	}
+
+	@Transactional
+	public void save(Student student) {
+
+		tx = session.beginTransaction();
+
+		session.saveOrUpdate(student);
+
+		tx.commit();
+
+	}
+
+	@Transactional
+	public void delete(int id) {
+
+		tx = session.beginTransaction();
+
+		Student student = session.get(Student.class, id);
+		System.out.println(student);
+		session.delete(student);
+
+		tx.commit();
+
+	}
+
+}

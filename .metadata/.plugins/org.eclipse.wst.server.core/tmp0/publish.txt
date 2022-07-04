@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Mon Jul 04 23:15:38 IST 2022
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\pc\\Desktop\\Lab\ 5\ -\ Spring\ MVC\\studentmanagement\\src\\main\\webapp\\WEB-INF\\lib\\spring-web-5.0.2.RELEASE-sources.jar=WEB-INF/lib/spring-web-5.0.2.RELEASE-sources.jar
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\pc\\Desktop\\Lab\ 5\ -\ Spring\ MVC\\studentmanagement\\src\\main\\webapp\\WEB-INF\\lib\\spring-web-5.0.2.RELEASE.jar=WEB-INF/lib/spring-web-5.0.2.RELEASE.jar
